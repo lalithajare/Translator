@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_size_20"
+        tools:context=".screens.EditProfileActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/dimen_size_100"
+            android:layout_height="@dimen/dimen_size_100"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_size_50"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_user" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/name"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dimen_size_5"
+                    android:background="@drawable/edittext_border"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_size_10"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_marginTop="@dimen/dimen_size_20"
+                    android:text="@string/height"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_height"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dimen_size_5"
+                    android:background="@drawable/edittext_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_size_10"
+                    android:singleLine="true" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_marginTop="@dimen/dimen_size_20"
+                    android:text="@string/weight"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_weight"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dimen_size_5"
+                    android:background="@drawable/edittext_border"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_size_10"
+                    android:singleLine="true" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_marginTop="@dimen/dimen_size_20"
+                    android:text="@string/medical_conditions"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_med_conds"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dimen_size_5"
+                    android:background="@drawable/edittext_border"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_size_10"
+                    android:singleLine="true" />
+
+
+                <Button
+                    android:id="@+id/btn_update"
+                    style="@style/ButtonStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_size_50"
+                    android:text="@string/update" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pg_bar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

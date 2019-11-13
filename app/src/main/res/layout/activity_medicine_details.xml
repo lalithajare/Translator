@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg_lang_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_size_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_korean"
+            style="@style/RadioButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_size_5"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center"
+            android:padding="@dimen/dimen_size_10"
+            android:text="@string/korean" />
+
+        <RadioButton
+            android:id="@+id/rb_vietnamese"
+            style="@style/RadioButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_size_5"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center"
+            android:padding="@dimen/dimen_size_10"
+            android:text="@string/vietnamese" />
+
+        <RadioButton
+            android:id="@+id/rb_english"
+            style="@style/RadioButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_size_5"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center"
+            android:padding="@dimen/dimen_size_10"
+            android:text="@string/english" />
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_buttons"
+        android:layout_below="@+id/rg_lang_tabs"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_size_20"
+            tools:context=".screens.AddMedicineActivity">
+
+
+            <ImageView
+                android:layout_width="@dimen/dimen_size_150"
+                android:layout_height="@dimen/dimen_size_150"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dimen_size_20"
+                android:src="@drawable/ic_pills" />
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_marginTop="@dimen/dimen_size_20"
+                android:text="@string/name_of_medicine"
+                android:textSize="@dimen/text_size_15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_medicine_name"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_size_5"
+                android:background="@drawable/edittext_border"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_size_10"
+                android:singleLine="true" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_marginTop="@dimen/dimen_size_20"
+                android:text="@string/add_a_description"
+                android:textSize="@dimen/text_size_15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_medicine_description"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_size_5"
+                android:background="@drawable/edittext_border"
+                android:gravity="top"
+                android:lines="10"
+                android:padding="@dimen/dimen_size_10" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_size_10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_edit"
+            style="@style/ButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/dimen_size_10"
+            android:layout_marginRight="@dimen/dimen_size_10"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/ButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+</RelativeLayout>

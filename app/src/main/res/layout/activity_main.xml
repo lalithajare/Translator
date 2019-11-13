@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_size_50"
+            android:layout_marginLeft="@dimen/dimen_size_50"
+            android:text="My Pharmacy"
+            android:textSize="@dimen/text_size_25"
+            android:textStyle="italic" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/dimen_size_100"
+            android:layout_height="@dimen/dimen_size_100"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_size_50"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_user" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_1"
+        android:background="@drawable/edittext_border" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/lin_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_size_120"
+                android:layout_height="@dimen/dimen_size_120"
+                android:layout_marginStart="@dimen/dimen_size_50"
+                android:layout_marginLeft="@dimen/dimen_size_50"
+                android:src="@drawable/ic_translate" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_size_50"
+                android:layout_marginLeft="@dimen/dimen_size_50"
+                android:text="@string/translate_my_med"
+                android:textSize="@dimen/text_size_25"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_1"
+        android:background="@drawable/edittext_border" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_my_medicines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_size_50"
+                android:layout_marginLeft="@dimen/dimen_size_50"
+                android:text="@string/my_medicines"
+                android:textSize="@dimen/text_size_25"
+                android:textStyle="italic" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_size_120"
+                android:layout_height="@dimen/dimen_size_120"
+                android:layout_marginStart="@dimen/dimen_size_50"
+                android:layout_marginLeft="@dimen/dimen_size_50"
+                android:src="@drawable/ic_drugs" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

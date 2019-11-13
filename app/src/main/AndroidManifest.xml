@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.translator.app">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".screens.EditTranslateActivity"></activity>
+        <activity android:name=".screens.EditProfileActivity" />
+        <activity
+            android:name=".screens.EditMedicineActivity"
+            android:label="Edit Medicine" />
+        <activity
+            android:name=".screens.MedicineDetailsActivity"
+            android:label="Medicine Details" />
+        <activity
+            android:name=".screens.MedicineListActivity"
+            android:label="My Medicines" />
+        <activity
+            android:name=".screens.AddMedicineActivity"
+            android:label="My Medicine" />
+        <activity
+            android:name=".screens.MainActivity"
+            android:label="Home" />
+        <activity
+            android:name=".screens.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screens.ProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".screens.TranslateActivity"
+            android:label="Translate" />
+
+        <provider
+            android:name=".utils.GenericFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+</manifest>

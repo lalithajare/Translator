@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Pharmacy</string>
+    <string name="translate">Translate</string>
+    <string name="enter_your_text_in_eng">Enter you text in english</string>
+    <string name="output">Output</string>
+    <string name="plz_wt_let_models_dwnld">Please wait, let language models download</string>
+    <string name="name">Name</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="medical_conditions">Medical Conditions</string>
+    <string name="save">Save</string>
+    <string name="plz_enter_med_conds">Please enter medical conditions</string>
+    <string name="plz_enter_weight">Please enter weight</string>
+    <string name="plz_enter_height">Please enter height</string>
+    <string name="plz_enter_name">Please enter name</string>
+    <string name="translate_my_med">Translate My Medicine</string>
+    <string name="my_medicines">My Medicines</string>
+    <string name="add_to_device">Add to Device</string>
+    <string name="name_of_medicine">Name of Medicine</string>
+    <string name="add_a_description">Add a Description</string>
+    <string name="translated">Translated</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="korean">Korean</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="english">English</string>
+    <string name="update">Update</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure, you want to delete?</string>
+    <string name="no_items_found">No Items found</string>
+    <string name="cannot_select_image">Cannot select image</string>
+</resources>
